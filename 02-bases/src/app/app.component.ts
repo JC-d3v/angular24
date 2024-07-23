@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  public title: string = 'Contadormi primer app angular';
+  public title: string = 'Mi primer app angular';
 
 }
