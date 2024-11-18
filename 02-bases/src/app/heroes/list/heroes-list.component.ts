@@ -12,7 +12,7 @@ export class HeroesListComponent {
 
   removeLastHero(): void {
     this.deletedLastHero = this.heroNames.pop();
-    console.log(`Jio Msg: elem: this.deletedLastHero val:`, `${this.deletedLastHero}`);
+    console.log(`Jio Msg: elem: this.deletedLastHero val: `, `${this.deletedLastHero}`);
   }
 
 }
