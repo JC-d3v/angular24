@@ -24,8 +24,12 @@ export class MainPageComponent {
   ];
 
   onNewCharacter(character: Character): void {
-    console.log('mainPage');
-    console.log(character);
+    this.characters.push(character);
+  }
+
+  onDeleteCharacter(index: number): void {
+    // this.characters.slice(index, 1);
+    console.log("borrar caracter");
   }
 
 }

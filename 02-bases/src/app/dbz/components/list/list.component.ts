@@ -19,4 +19,16 @@ export class ListComponent {
   ]
 
 
+  onDelete(): number {
+    return
+  }
+
+
+  onDeleteCharacter(index: number): void {
+    // TODO: Emitir el ID del Personaje;
+    console.log(`Jio Msg: elem:Index val:`, index);
+
+  }
+
+
 }
