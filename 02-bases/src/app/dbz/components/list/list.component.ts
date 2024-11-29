@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, output, EventEmitter, Output } from '@angular/core';
 import { Character } from '../../intefaces/character.interface';
 
 
@@ -18,14 +18,15 @@ export class ListComponent {
     }
   ]
 
-
-  onDelete(): number {
-    return
-  }
+  @Output()
+  public onDelete: EventEmitter<number> = new EventEmitter();
 
 
   onDeleteCharacter(index: number): void {
     // TODO: Emitir el ID del Personaje;
+    this.onDelete.emit(index);
+
+
     console.log(`Jio Msg: elem:Index val:`, index);
 
   }

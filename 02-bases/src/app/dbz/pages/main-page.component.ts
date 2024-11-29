@@ -28,8 +28,7 @@ export class MainPageComponent {
   }
 
   onDeleteCharacter(index: number): void {
-    // this.characters.slice(index, 1);
-    console.log("borrar caracter");
+    this.characters.splice(index, 1);
   }
 
 }
